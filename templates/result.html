@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analysis</title>
+</head>
+<body>
+    <h1>Resume Analysis</h1>
+    <h2>Skills:</h2>
+    <ul>
+        {% for skill in analysis.skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Education:</h2>
+    <ul>
+        {% for edu in analysis.education %}
+            <li>{{ edu }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Relevance Score:</h2>
+    <p>{{ relevance_score }}</p>
+</body>
+</html>
